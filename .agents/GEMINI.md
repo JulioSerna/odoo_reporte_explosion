@@ -22,4 +22,3 @@ Este repositorio contiene la solución técnica y metodología para el **Reporte
 Antes de entregar cualquier cambio en la lógica de negocio, se deben ejecutar:
 * **Validación de Sintaxis**: `python3 scripts/validate.py`
 * **Pruebas Unitarias**: `python3 -m unittest discover tests`
-* **Empaquetado de Entregable**: `python3 scripts/package.py`

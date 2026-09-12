@@ -3,11 +3,11 @@
 Este proyecto gestiona el desarrollo, pruebas unitarias y empaquetado del **Reporte de Explosión y Planificación de Compras para Odoo**.
 
 ## 📁 Estructura del Repositorio
-* `docs/adrs/`: Architecture Decision Records (ADR-0001, ADR-0002, ADR-0003).
+* `docs/adrs/`: Architecture Decision Records.
 * `docs/specs/`: Especificación técnica detallada del proyecto.
-* `src/`: Código fuente principal Python de la Acción de Servidor.
+* `src/`: Código fuente principal Python de la Acción de Servidor (`src/server_action.py`).
 * `tests/`: Pruebas unitarias TDD con Mocks.
-* `scripts/`: Scripts de automatización (validación de sintaxis y empaquetado).
+* `scripts/`: Scripts de automatización (validación de sintaxis).
 
 ## 🚀 Comandos Rápidos
 
@@ -20,9 +20,3 @@ python3 scripts/validate.py
 ```bash
 python3 -m unittest discover tests
 ```
-
-### Empaquetar Código para Odoo UI
-```bash
-python3 scripts/package.py
-```
-El archivo resultante estará en `dist/odoo_server_action_payload.py`.

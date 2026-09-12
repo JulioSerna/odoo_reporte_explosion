@@ -117,5 +117,6 @@ def generate_purchases_explosion_csv(env):
         'target': 'self',
     }
 
-# Si se ejecuta directamente desde Odoo Server Action Context:
-# action = generate_purchases_explosion_csv(env)
+# Invocación directa en el contexto de Odoo Server Action:
+if 'env' in locals() or 'env' in globals():
+    action = generate_purchases_explosion_csv(env)
