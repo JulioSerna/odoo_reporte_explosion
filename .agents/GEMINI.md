@@ -14,6 +14,10 @@ Este repositorio contiene la solución técnica y metodología para el **Reporte
 3. **Entregable**:
    * Código autocontenido para **Acción de Servidor (`ir.actions.server`)** que genera y descarga dinámicamente un archivo `.csv`.
 
+4. **Seguridad y Pruebas de Integración (`mcp-odoo`)**:
+   * **Cero credenciales en código**: Jamás guardar credenciales, URLs, usuarios o contraseñas en archivos del repositorio.
+   * Las pruebas de integración (verificar que la Server Action no falle y que los datos sean correctos) y el despliegue a producción se ejecutan a través de **AGY** utilizando el servidor MCP local de Odoo (`mcp-odoo`).
+
 ## 🧪 Comandos Obligatorios de Verificación
 Antes de entregar cualquier cambio en la lógica de negocio, se deben ejecutar:
 * **Validación de Sintaxis**: `python3 scripts/validate.py`
